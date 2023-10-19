@@ -38,7 +38,7 @@ func (h helloWorldHandler) Run(
 		IsBase64Encoded: false,
 	}
 
-	data, marshalErr := json.Marshal(HelloWorldResponse{
+	data, marshalErr := json.Marshal(Response{
 		Message: "Hello, World!",
 	})
 	if marshalErr != nil {
