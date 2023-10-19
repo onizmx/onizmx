@@ -5,6 +5,7 @@
 # output
 bin
 build
+output
 
 # dependency
 node_modules
