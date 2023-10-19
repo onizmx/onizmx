@@ -21,7 +21,7 @@ const (
 	MIN_TOWER_COUNT = 2
 	MAX_TOWER_COUNT = 8
 
-	MIN_DATA_POINT_COUNT = 1000
+	MIN_DATA_POINT_COUNT = 3000
 	MAX_DATA_POINT_COUNT = 10000
 )
 
@@ -62,9 +62,11 @@ func main() {
 	towerStreamList := make([]TowerStream, 0)
 	for farmID, towerIDList := range farmTowerIDListMap {
 		for _, towerID := range towerIDList {
+			minRSSI := getRandomInt(60, 89)
+			maxRSSI := getRandomInt(90, 120)
 			dataPointCount := getRandomInt(MIN_DATA_POINT_COUNT, MAX_DATA_POINT_COUNT)
 			for index := 0; index < dataPointCount; index++ {
-				rssi := getRandomInt(60, 120) * -1
+				rssi := getRandomInt(minRSSI, maxRSSI) * -1
 				towerStream := TowerStream{
 					FarmID:  farmID,
 					TowerID: towerID,

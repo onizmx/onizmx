@@ -39,12 +39,12 @@ func (h towerStreamHandler) Run(
 	}
 
 	blobList := []string{
-		"https://comms-intern-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T04%3A31%3A02.817Z.csv",
-		"https://comms-intern-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T04%3A31%3A02.857Z.csv",
-		"https://comms-intern-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T04%3A31%3A02.898Z.csv",
-		"https://comms-intern-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T04%3A31%3A02.942Z.csv",
-		"https://comms-intern-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T04%3A31%3A02.983Z.csv",
-		"https://comms-intern-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T04%3A31%3A03.061Z.csv",
+		"https://comms-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T06%3A58%3A24.613Z.csv",
+		"https://comms-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T06%3A58%3A24.657Z.csv",
+		"https://comms-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T06%3A58%3A24.695Z.csv",
+		"https://comms-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T06%3A58%3A24.746Z.csv",
+		"https://comms-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T06%3A58%3A24.773Z.csv",
+		"https://comms-tech-test.s3.ap-southeast-2.amazonaws.com/tower_stream/tower-stream-2023-10-19T06%3A58%3A24.860Z.csv",
 	}
 	data, marshalErr := json.Marshal(blobList)
 	if marshalErr != nil {
