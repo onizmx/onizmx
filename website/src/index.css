@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  position: fixed;
+  font-size: 16px;
+  background-color: #eaeaea;
+  overflow: hidden;
+}
+
+body,
+#root {
+  color: #3c3c3c;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family:
+    Arial,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  background-color: #eaeaea;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  box-shadow: none !important;
+}
+
+@font-face {
+  font-family: 'RalewayRegular';
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+}
