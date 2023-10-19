@@ -1,0 +1,23 @@
+# security
+.env
+.env.*
+
+# output
+bin
+build
+
+# dependency
+node_modules
+
+# terraform
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.tfstate.lock.info
+
+# logs
+*debug.log
+*error.log
+
+# misc
+.DS_Store
