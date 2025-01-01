@@ -1,18 +1,22 @@
-import { RouteConfig } from './route.config.types';
+import { RouteConfig } from "./route.config.types";
 
 export const domain: string = window.location.hostname;
 
 export const routeConfig: RouteConfig = {
   home: {
-    path: '/',
-    name: 'Home',
+    path: "/",
+    name: "Home",
   },
   about: {
-    path: '/about',
-    name: 'About',
+    path: "/about",
+    name: "About",
   },
   project: {
-    path: '/project',
-    name: 'Project',
+    path: "/project",
+    name: "Project",
+  },
+  downloader: {
+    path: "/downloader",
+    name: "Downloader",
   },
 };
