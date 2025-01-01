@@ -2,11 +2,6 @@ resource "aws_s3_bucket" "website_root" {
   bucket = var.domain
 }
 
-resource "aws_s3_bucket_acl" "website_root" {
-  bucket = aws_s3_bucket.website_root.id
-  acl    = "public-read"
-}
-
 resource "aws_s3_bucket_policy" "website_root" {
   bucket = aws_s3_bucket.website_root.id
   policy = data.aws_iam_policy_document.website_root.json
@@ -27,11 +22,6 @@ resource "aws_s3_bucket_website_configuration" "website_root" {
 
 resource "aws_s3_bucket" "website_www" {
   bucket = "www.${var.domain}"
-}
-
-resource "aws_s3_bucket_acl" "website_www" {
-  bucket = aws_s3_bucket.website_www.id
-  acl    = "public-read"
 }
 
 resource "aws_s3_bucket_policy" "website_www" {
